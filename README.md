@@ -22,9 +22,9 @@ The data cleaning process involves the following steps.
 
     -  Loading the raw data.
 
-2. **Droping the index column.**
+2. **Dropping the index column.**
 Dropping the index column as it is not needed.
-3. **Cleaning the salary_estimate column:** Extracting minimum salary, maximum salary, and average salary, storing them in new columns.
+3. **Cleaning the salary_estimate column:** Extracting minimum and maximum salary, storing them in new columns.
 4. **Cleaning the rating column:** Replacing '-1' with '1'.
 5. **Cleaning the country_name column:** Removing numbers at the end of each country name.
 6. **Transforming the location column:** Extracting city, state, and country into new columns and dropping the original location column.
