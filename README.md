@@ -105,7 +105,7 @@ FROM 'E:\Data Analysis\Portfolio\SQL\sql_project_job_data_cleaning\job_data\Uncl
 WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
 ```
 
-## 2. Droping the Index Column
+## 2. Dropping the Index Column
 The table had an index column that was not required, hence it was dropped.
 
 ```sql
@@ -115,11 +115,11 @@ DROP index;
 
 ## 3. Cleaning the Salary Estimate Column 
 
-Extracting data on minimum and maximum salary and saving it into new columns. Calculating average salary and saving it into a new column, then dropping the original salary_estimate column.
+Extracting data on minimum and maximum salary and saving it into new columns. Calculating the average salary and saving it into a new column, then dropping the original salary_estimate column.
 
 
 ```sql
--- Creating column for minimum salary
+-- Creating a column for minimum salary
 ALTER TABLE data_jobs
 ADD COLUMN min_salary INTEGER;
 
